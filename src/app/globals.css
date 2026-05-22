@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors - New Palette */
-  --color-bg-primary: #0F2433;
-  --color-bg-secondary: #1B3C53;
-  --color-bg-card: #223F56;
-  --color-text-primary: #E8DED7;
-  --color-text-secondary: #B8C4CC;
-  --color-text-muted: #8FA3B1;
-  --color-accent: #4F7A99;
-  --color-border: #2D4F66;
+  /* Colors - Simanto Palette (Based on Portrait) */
+  --color-bg-primary: #0A1621;
+  --color-bg-secondary: #0F2433;
+  --color-bg-card: #152E40;
+  --color-text-primary: #F0F4F8;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+  --color-accent: #3B82F6;
+  --color-accent-glow: rgba(59, 130, 246, 0.5);
+  --color-border: rgba(59, 130, 246, 0.15);
 
   --color-primary: var(--color-accent);
   --color-on-primary: #ffffff;
@@ -55,19 +56,19 @@ body {
 }
 
 .glass-card {
-  background: rgba(34, 63, 86, 0.4);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(45, 79, 102, 0.3);
+  background: rgba(21, 46, 64, 0.4);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(59, 130, 246, 0.1);
 }
 
 .glass-nav {
-  background: rgba(15, 36, 51, 0.8);
+  background: rgba(10, 22, 33, 0.8);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(45, 79, 102, 0.3);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
 }
 
 .glow-accent {
-  box-shadow: 0 0 30px rgba(79, 122, 153, 0.2);
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
 }
 
 .noise-bg {

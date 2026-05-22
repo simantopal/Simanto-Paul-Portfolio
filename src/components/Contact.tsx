@@ -13,7 +13,7 @@ export default function Contact() {
           className="space-y-8"
         >
           <div className="space-y-4">
-            <h2 className="font-h2 text-h2 text-text-primary">Have a project? <br/> <span className="text-accent">Let&apos;s talk!</span></h2>
+            <h2 className="font-h2 text-h2 text-text-primary">Have a project? <br /> <span className="text-accent">Let&apos;s talk!</span></h2>
             <p className="text-body-lg text-text-secondary max-w-md">
               I&apos;m currently taking on new projects and would love to hear about yours. Drop me a message and let&apos;s build something amazing together.
             </p>
@@ -26,7 +26,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-label-sm text-text-muted">Email</p>
-                <p className="text-text-primary font-medium">hello@mishu.dev</p>
+                <p className="text-text-primary font-medium">simantop13@gmail.com</p>
               </div>
             </div>
             <div className="flex items-center gap-4 group cursor-pointer">
@@ -35,7 +35,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-label-sm text-text-muted">Phone</p>
-                <p className="text-text-primary font-medium">+1 (234) 567 890</p>
+                <p className="text-text-primary font-medium">+880 1782930690</p>
               </div>
             </div>
           </div>

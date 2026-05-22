@@ -9,34 +9,34 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="space-y-4 text-center md:text-left">
           <div className="text-2xl font-bold text-accent tracking-tighter font-h1">
-            Mishu
+            Simanto
           </div>
           <p className="text-body-sm text-text-muted max-w-xs">
-            Built with Next.js, Framer Motion, and GSAP. 
+            Built with Next.js, Framer Motion, and GSAP.
             Designed with precision and passion.
           </p>
         </div>
 
         <div className="flex gap-6">
-          <SocialLink 
-            href="#" 
+          <SocialLink
+            href="#"
             type="devicon"
-            icon="github" 
+            icon="github"
           />
-          <SocialLink 
-            href="#" 
+          <SocialLink
+            href="#"
             type="devicon"
-            icon="linkedin" 
+            icon="linkedin"
           />
-          <SocialLink 
-            href="mailto:hello@mishu.dev" 
+          <SocialLink
+            href="mailto:hello@simanto.dev"
             type="material"
-            icon="mail" 
+            icon="mail"
           />
         </div>
 
         <div className="text-body-sm text-text-muted">
-          © 2026 Mishu. All rights reserved.
+          © 2026 Simanto. All rights reserved.
         </div>
       </div>
     </footer>
@@ -51,7 +51,7 @@ function SocialLink({ icon, href, type }: { icon: string; href: string; type: 'd
       className="w-12 h-12 rounded-xl bg-bg-card border border-border flex items-center justify-center text-text-secondary transition-all group"
     >
       {type === 'devicon' ? (
-        <Image 
+        <Image
           src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${icon}/${icon}-original.svg`}
           alt={icon}
           width={24}

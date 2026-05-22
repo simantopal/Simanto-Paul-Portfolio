@@ -14,7 +14,7 @@ export default function About() {
     <section className="py-20 px-8 relative" id="about">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -22,16 +22,16 @@ export default function About() {
           >
             About me
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
             className="text-body-lg text-text-secondary leading-relaxed"
           >
-            I am a results-driven Software Developer with a passion for creating seamless user experiences. With over 3 years of experience in the tech industry, I have developed a strong foundation in full-stack development. I focus on writing clean, maintainable code and optimizing application performance.
+            I am a results-driven Web Developer with a passion for creating seamless user experiences. With over 3 years of experience in the tech industry, I have developed a strong foundation in full-stack development. I focus on writing clean, maintainable code and optimizing application performance.
           </motion.p>
-          
+
           <div className="grid grid-cols-3 gap-4 pt-4">
             {stats.map((stat, i) => (
               <CounterCard key={stat.label} stat={stat} delay={i * 0.1} />
@@ -40,30 +40,30 @@ export default function About() {
         </div>
 
         <div className="grid grid-cols-2 gap-4">
-          <AboutCard 
-            title="Design" 
-            icon="palette" 
-            text="Crafting beautiful interfaces with modern aesthetics." 
+          <AboutCard
+            title="Design"
+            icon="palette"
+            text="Crafting beautiful interfaces with modern aesthetics."
             color="bg-accent/20"
           />
-          <AboutCard 
-            title="Performance" 
-            icon="bolt" 
-            text="Optimizing for speed and efficiency." 
+          <AboutCard
+            title="Performance"
+            icon="bolt"
+            text="Optimizing for speed and efficiency."
             color="bg-accent/10"
             delay={0.2}
           />
-          <AboutCard 
-            title="Clean Code" 
-            icon="code" 
-            text="Writing maintainable and scalable solutions." 
+          <AboutCard
+            title="Clean Code"
+            icon="code"
+            text="Writing maintainable and scalable solutions."
             color="bg-accent/10"
             delay={0.1}
           />
-          <AboutCard 
-            title="Innovation" 
-            icon="lightbulb" 
-            text="Exploring new technologies and patterns." 
+          <AboutCard
+            title="Innovation"
+            icon="lightbulb"
+            text="Exploring new technologies and patterns."
             color="bg-accent/20"
             delay={0.3}
           />
@@ -109,7 +109,7 @@ function CounterCard({ stat, delay }: { stat: any; delay: number }) {
   }, [stat.value, stat.label]);
 
   return (
-    <motion.div 
+    <motion.div
       id={`stat-${stat.label}`}
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}

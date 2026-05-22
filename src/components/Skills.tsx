@@ -8,7 +8,7 @@ const skillCategories = [
     icon: "desktop_windows",
     skills: [
       { name: "Modern React Architecture & Hooks", level: 95 },
-      { name: "State Management (Redux, Zustand)", level: 90 },
+      { name: "State Management", level: 90 },
       { name: "Responsive UI with Tailwind CSS", level: 98 },
     ],
     direction: -100,
@@ -18,7 +18,7 @@ const skillCategories = [
     icon: "database",
     skills: [
       { name: "RESTful & GraphQL API Design", level: 85 },
-      { name: "Database Optimization (SQL & NoSQL)", level: 80 },
+      { name: "Database Optimization (MongoDB)", level: 80 },
       { name: "Authentication & JWT Implementation", level: 88 },
     ],
     direction: 100,
@@ -70,7 +70,7 @@ export default function Skills() {
                         transition={{ duration: 1.5, delay: i * 0.1, ease: "circOut" }}
                         className="h-full bg-accent relative"
                       >
-                        <motion.div 
+                        <motion.div
                           animate={{ x: ["-100%", "100%"] }}
                           transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                           className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-transparent via-white/20 to-transparent"

@@ -5,24 +5,18 @@ import { useRef } from "react";
 
 const experiences = [
   {
-    year: "2022 - PRESENT",
-    title: "Software Engineer",
-    company: "Tech Solutions Ltd.",
-    description: "Led development of high-traffic e-commerce platform using Next.js and Microservices architecture.",
-  },
-  {
-    year: "2021 - 2022",
+    year: "2026 -PRESENT",
     title: "Web Developer",
-    company: "Creative Digital Agency",
-    description: "Built custom CMS solutions and interactive portfolios for international clients.",
+    company: "",
+    description: "Built custom solutions and interactive Websites for international clients.",
   },
 ];
 
 const education = [
   {
-    year: "2017 - 2021",
-    title: "B.Sc in Computer Science",
-    company: "Technical University of Excellence",
+    year: "2020 - 2024",
+    title: "Diploma in Computer Science",
+    company: "Haji Abul Hossain Institute of Technology",
     description: "Focused on Algorithms, Distributed Systems, and Software Engineering principles.",
   },
 ];
@@ -45,7 +39,7 @@ export default function Experience() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 relative">
         {/* Experience Column */}
         <div className="space-y-12">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -56,11 +50,11 @@ export default function Experience() {
           </motion.div>
 
           <div className="relative pl-8 space-y-12 border-l border-border">
-            <motion.div 
+            <motion.div
               style={{ scaleY, originY: 0 }}
-              className="absolute left-[-1px] top-0 w-[1px] h-full bg-accent shadow-[0_0_10px_rgba(79,122,153,0.5)] z-10"
+              className="absolute left-[-1px] top-0 w-[1px] h-full bg-accent shadow-[0_0_15px_rgba(59,130,246,0.6)] z-10"
             />
-            
+
             {experiences.map((exp, i) => (
               <TimelineItem key={i} item={exp} delay={i * 0.2} />
             ))}
@@ -69,7 +63,7 @@ export default function Experience() {
 
         {/* Education Column */}
         <div className="space-y-12">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -80,11 +74,11 @@ export default function Experience() {
           </motion.div>
 
           <div className="relative pl-8 space-y-12 border-l border-border">
-            <motion.div 
+            <motion.div
               style={{ scaleY, originY: 0 }}
-              className="absolute left-[-1px] top-0 w-[1px] h-full bg-accent shadow-[0_0_10px_rgba(79,122,153,0.5)] z-10"
+              className="absolute left-[-1px] top-0 w-[1px] h-full bg-accent shadow-[0_0_15px_rgba(59,130,246,0.6)] z-10"
             />
-            
+
             {education.map((edu, i) => (
               <TimelineItem key={i} item={edu} delay={i * 0.2} />
             ))}
@@ -105,7 +99,7 @@ function TimelineItem({ item, delay }: any) {
       className="relative"
     >
       <div className="absolute left-[-37px] top-2 w-4 h-4 rounded-full bg-bg-primary border-2 border-accent z-20">
-        <motion.div 
+        <motion.div
           animate={{ scale: [1, 1.5, 1] }}
           transition={{ duration: 2, repeat: Infinity }}
           className="absolute inset-0 rounded-full bg-accent/30"

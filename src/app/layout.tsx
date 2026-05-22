@@ -17,8 +17,8 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-  title: "Mishu | Premium Developer Portfolio",
-  description: "Building high-performance web applications with precision and modern architectural patterns.",
+  title: "Simanto | Web Developer Portfolio",
+  description: "Specializing in high-performance web applications, React, and Node.js. Experience in building scalable, modern web solutions.",
 };
 
 export default function RootLayout({
