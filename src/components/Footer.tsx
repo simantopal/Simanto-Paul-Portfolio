@@ -19,17 +19,17 @@ export default function Footer() {
 
         <div className="flex gap-6">
           <SocialLink
-            href="#"
+            href="https://github.com/simantopal"
             type="devicon"
             icon="github"
           />
           <SocialLink
-            href="#"
+            href="https://www.linkedin.com/in/simanto-paul14/"
             type="devicon"
             icon="linkedin"
           />
           <SocialLink
-            href="mailto:hello@simanto.dev"
+            href="mailto:simantop13@gmail.com"
             type="material"
             icon="mail"
           />
