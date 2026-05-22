@@ -9,6 +9,7 @@ const technologies = [
   { name: "React", icon: "react" },
   { name: "Next.js", icon: "nextjs" },
   { name: "Node.js", icon: "nodejs" },
+  { name: "Express.js", icon: "express" },
   { name: "MongoDB", icon: "mongodb" },
   { name: "HTML5", icon: "html5" },
   { name: "CSS3", icon: "css3" },
