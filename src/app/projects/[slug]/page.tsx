@@ -82,7 +82,7 @@ const projectDetails = {
     github: "https://github.com/simantopal/ticketbari-server",
   },
 
-  "mediqueue": {
+  "mediQueue": {
     title: "MediQueue",
     category: "Tutor Booking Platform",
     image: mediqueueImage,

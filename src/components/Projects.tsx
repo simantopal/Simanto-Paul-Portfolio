@@ -31,7 +31,7 @@ const projects = [
     title: "MediQueue",
     category: "Web Apps",
     image: mediQueueImage,
-    tags: ["Framer", "Tailwind"],
+    tags: ["Next.js", "MongoDB"],
     link: "https://medi-queue-client-side.vercel.app",
     github: "https://github.com/simantopal/MediQueue-client-side",
   },
