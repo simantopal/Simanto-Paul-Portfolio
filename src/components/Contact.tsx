@@ -64,7 +64,7 @@ export default function Contact() {
         </motion.div>
 
         <motion.form
-          action="https://formsubmit.co/simantop13@gmail.com"
+          action="https://formsubmit.co/28a355804ca6150c6f788ccead5612fc"
           method="POST"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
