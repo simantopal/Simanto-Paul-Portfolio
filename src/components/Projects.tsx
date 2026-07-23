@@ -6,38 +6,41 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const projects = [
   {
-    title: "E-Commerce Website",
+    slug: "orvanta-ai",
+    title: "Orvanta AI",
     category: "Web Apps",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBJVmO6rNjdyP9alN2vxUqQ1YenRRywl4VRdWOnnK0EDAeNVIP7SPZSqHZrVDF28sbGZ0EDc_4xzDpXdXmbDEjANzjHUPguK2JtMYXXJ1J-S5k6a-FlNdWcguIPeZz7PYG4-oDmZcgc28_hYsBav47wUUOENsfGAmyx9_fPC7proXPTRG84ESP1ox0Ws108umdoK3hqQa05dLUpWVqov82GNL24bSXrWq3TqCnQRo3Kx61CguwqK0lIrSfSmXeGwOAnvxt8TOJfHeg",
-    tags: ["React", "Stripe"],
-    link: "#",
-    github: "#",
+    image: "/asset/Orvanta-ai.png",
+    tags: ["Next.js", "TypeScript", "AI"],
+    link: "https://orvanta-ai.vercel.app",
+    github: "https://github.com/simantopal/Orvanta-Ai",
   },
   {
-    title: "Task Management App",
+    slug: "online-ticket-booking",
+    title: "Online Ticket Booking Platform",
     category: "Web Apps",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA_7qJvlfW9Nsgjakoq0gi0o5PsKgo6rHHBLyc-iCXZD0f2mG8Kf8yAIN-KcXHI5IHlxugDZZcm61dKFhnU7yA6VPZghfp6K6yg90o2uWrjkOIiLrVXT4CfZGYnpBJID9v9bgqb05rLYuK-eVkiEFv8w1n_MCHGAeQL6G1i9E_yFQTyqexG_Omv967NYX-m7YAJ9SRZlkpKfYVoFhWbIa-h1h5mW6t9dNLVpQqTP87RNr9Hxai9dW8mGDRL25MCk3a3aEr0bOupBaU",
-    tags: ["Next.js", "Node.js"],
-    link: "#",
-    github: "#",
+    image: "/asset/ticket-bari.JPG",
+    tags: ["Next.js", "Node.js", "MongoDB"],
+    link: "https://online-ticket-booking-platform-six.vercel.app",
+    github: "https://github.com/simantopal/online-ticket-booking-platform",
   },
   {
-    title: "Portfolio Website",
-    category: "UI/UX",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuABl5OO-PaLME2DqDCJ_1cYPwwpxFHsz2I_Omt1nBId7mWaUIuRj4U6T4MB2LTOZeJxdf7r45d0NNRdKDj5jLmY3b67Nbht_gM0cJaLRfrGDCS32TEgGdkY2dID66mt7YAt1OUQ1ZNAfrncjR7Us6zj3vd_aesf5uSoSOksfKiSBmLwTa3GtVigqVoI1Wmj5Xx2zdn4_9t4H6ntOGa0K9wum4BAnDWl85NqRjUeBEC17PUQj3lPp9GZaE1T-FZ0NcM320rJZ080zm0",
+    slug: "mediQueue",
+    title: "MediQueue",
+    category: "full-stack",
+    image: "/asset/mediQueue.JPG",
     tags: ["Framer", "Tailwind"],
-    link: "#",
-    github: "#",
+    link: "https://medi-queue-client-side.vercel.app",
+    github: "https://github.com/simantopal/MediQueue-client-side",
   },
 ];
 
-const categories = ["All", "Web Apps", "UI/UX"];
+const categories = ["All", "Web Apps", "Full-Stack"];
 
 export default function Projects() {
   const [activeTab, setActiveTab] = useState("All");
 
-  const filteredProjects = activeTab === "All" 
-    ? projects 
+  const filteredProjects = activeTab === "All"
+    ? projects
     : projects.filter(p => p.category === activeTab);
 
   return (
@@ -48,7 +51,7 @@ export default function Projects() {
             <h2 className="font-h2 text-h2 text-text-primary">My Projects</h2>
             <p className="text-text-secondary">A selection of my recent work across various domains.</p>
           </div>
-          
+
           <div className="flex bg-bg-card p-1 rounded-full border border-border">
             {categories.map((cat) => (
               <button
@@ -69,7 +72,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <motion.div 
+        <motion.div
           layout
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
@@ -102,13 +105,14 @@ function ProjectCard({ project }: any) {
           className="object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-bg-primary via-transparent to-transparent opacity-60" />
-        
+
         <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            href={project.link}
+            href={`/projects/${project.slug}`}
             className="w-12 h-12 bg-white text-bg-primary rounded-full flex items-center justify-center shadow-xl"
+
           >
             <span className="material-symbols-outlined">visibility</span>
           </motion.a>
