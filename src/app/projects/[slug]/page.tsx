@@ -41,6 +41,7 @@ const projectDetails = {
     challenges:
       "One of the main challenges was integrating AI functionality into a real-world e-commerce experience while keeping the application fast, responsive, and easy to use. I solved this by separating the frontend and backend architecture and creating dedicated API endpoints for AI and product-related operations.",
 
+    link: "https://orvanta-ai.vercel.app",
     github: "https://github.com/simantopal/Orvanta-Ai-Server",
   },
 
@@ -79,6 +80,7 @@ const projectDetails = {
     challenges:
       "The main challenge was managing multiple user roles and building a complete booking workflow. I implemented role-based access control and designed separate dashboard experiences for passengers, vendors, and administrators.",
 
+    link: "https://online-ticket-booking-platform-six.vercel.app",
     github: "https://github.com/simantopal/ticketbari-server",
   },
 
@@ -114,6 +116,7 @@ const projectDetails = {
     challenges:
       "The main challenge was creating a smooth tutor discovery and booking experience. I designed a structured workflow where users can explore tutors, check their details, and book available sessions while keeping the application responsive and easy to use.",
 
+    link: "https://medi-queue-client-side.vercel.app",
     github: "https://github.com/simantopal/MediQueue-server-side",
   },
 };
@@ -182,6 +185,17 @@ export default function ProjectDetails({
             </p>
 
             <div className="flex gap-4">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-white hover:opacity-90 transition"
+              >
+                <span className="material-symbols-outlined text-lg">
+                  open_in_new
+                </span>
+                Live Demo
+              </a>
               <a
                 href={project.github}
                 target="_blank"
