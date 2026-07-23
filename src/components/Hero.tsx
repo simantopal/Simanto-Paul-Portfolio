@@ -73,21 +73,22 @@ export default function Hero() {
         </p>
 
         <div className="reveal-text flex flex-wrap gap-4 pt-4">
-          <motion.button
-            whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(79, 122, 153, 0.4)" }}
+          <motion.a
+            href="/Simanto-Paul-Resume.pdf"
+            download="Simanto-Paul-Resume.pdf"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 0 25px rgba(79, 122, 153, 0.4)",
+            }}
             whileTap={{ scale: 0.95 }}
             className="flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg"
           >
-            <span className="material-symbols-outlined text-xl">download</span>
+            <span className="material-symbols-outlined text-xl">
+              download
+            </span>
+
             DOWNLOAD CV
-          </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.05, backgroundColor: "rgba(79, 122, 153, 0.1)" }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 rounded-xl font-bold border border-accent/30 text-accent transition-all"
-          >
-            HIRE ME
-          </motion.button>
+          </motion.a>
         </div>
       </div>
 

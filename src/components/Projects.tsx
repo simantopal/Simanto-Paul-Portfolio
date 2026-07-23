@@ -3,13 +3,16 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import orvantaImage from "@/asset/Orvanta-ai.png";
+import ticketBariImage from "@/asset/ticket-bari.png";
+import mediQueueImage from "@/asset/mediqueue.png";
 
 const projects = [
   {
     slug: "orvanta-ai",
     title: "Orvanta AI",
-    category: "Web Apps",
-    image: "/asset/Orvanta-ai.png",
+    category: "Full-Stack",
+    image: orvantaImage,
     tags: ["Next.js", "TypeScript", "AI"],
     link: "https://orvanta-ai.vercel.app",
     github: "https://github.com/simantopal/Orvanta-Ai",
@@ -18,7 +21,7 @@ const projects = [
     slug: "online-ticket-booking",
     title: "Online Ticket Booking Platform",
     category: "Web Apps",
-    image: "/asset/ticket-bari.JPG",
+    image: ticketBariImage,
     tags: ["Next.js", "Node.js", "MongoDB"],
     link: "https://online-ticket-booking-platform-six.vercel.app",
     github: "https://github.com/simantopal/online-ticket-booking-platform",
@@ -26,8 +29,8 @@ const projects = [
   {
     slug: "mediQueue",
     title: "MediQueue",
-    category: "full-stack",
-    image: "/asset/mediQueue.JPG",
+    category: "Web Apps",
+    image: mediQueueImage,
     tags: ["Framer", "Tailwind"],
     link: "https://medi-queue-client-side.vercel.app",
     github: "https://github.com/simantopal/MediQueue-client-side",

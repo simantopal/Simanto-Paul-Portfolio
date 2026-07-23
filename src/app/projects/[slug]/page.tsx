@@ -4,12 +4,15 @@ import { use } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import orvantaImage from "@/asset/Orvanta-ai.png";
+import ticketBariImage from "@/asset/ticket-bari.png";
+import mediqueueImage from "@/asset/mediqueue.png";
 
 const projectDetails = {
   "orvanta-ai": {
     title: "Orvanta AI",
     category: "AI-Powered E-Commerce Platform",
-    image: "/asset/orvanta.png",
+    image: orvantaImage,
 
     description:
       "Orvanta AI is an AI-powered e-commerce platform designed to provide a smarter and more personalized shopping experience. The platform combines modern e-commerce functionality with AI-powered assistance to help users discover products and make better purchasing decisions.",
@@ -42,9 +45,9 @@ const projectDetails = {
   },
 
   "online-ticket-booking": {
-    title: "Online Ticket Booking Platform",
+    title: "TicketBari - Online Ticket Booking Platform",
     category: "Full-Stack Web Application",
-    image: "/asset/ticket-bari.png",
+    image: ticketBariImage,
 
     description:
       "This is a complete online ticket booking platform where users can browse and book tickets, vendors can add and manage their tickets, and administrators can manage users, tickets, and advertisements.",
@@ -76,7 +79,42 @@ const projectDetails = {
     challenges:
       "The main challenge was managing multiple user roles and building a complete booking workflow. I implemented role-based access control and designed separate dashboard experiences for passengers, vendors, and administrators.",
 
-    github: "#",
+    github: "https://github.com/simantopal/ticketbari-server",
+  },
+
+  "mediqueue": {
+    title: "MediQueue",
+    category: "Tutor Booking Platform",
+    image: mediqueueImage,
+
+    description:
+      "MediQueue is an online tutor booking platform that helps students find suitable tutors and book learning sessions based on their preferred subjects, expertise, and availability.",
+
+    features: [
+      "Tutor search and discovery",
+      "Subject and expertise based filtering",
+      "Tutor profile and details",
+      "Session booking system",
+      "Tutor service management",
+      "User dashboard",
+      "Booking management",
+      "Responsive user interface",
+    ],
+
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT Authentication",
+    ],
+
+    challenges:
+      "The main challenge was creating a smooth tutor discovery and booking experience. I designed a structured workflow where users can explore tutors, check their details, and book available sessions while keeping the application responsive and easy to use.",
+
+    github: "https://github.com/simantopal/MediQueue-server-side",
   },
 };
 
