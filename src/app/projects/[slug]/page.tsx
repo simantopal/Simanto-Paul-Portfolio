@@ -41,6 +41,14 @@ const projectDetails = {
     challenges:
       "One of the main challenges was integrating AI functionality into a real-world e-commerce experience while keeping the application fast, responsive, and easy to use. I solved this by separating the frontend and backend architecture and creating dedicated API endpoints for AI and product-related operations.",
 
+    futurePlans: [
+      "Improve AI-powered product recommendations",
+      "Add personalized shopping experiences based on user behavior",
+      "Implement secure online payment integration",
+      "Add real-time order tracking and notifications",
+      "Improve application performance and scalability",
+    ],
+
     link: "https://orvanta-ai.vercel.app",
     github: "https://github.com/simantopal/Orvanta-Ai-Server",
   },
@@ -80,6 +88,14 @@ const projectDetails = {
     challenges:
       "The main challenge was managing multiple user roles and building a complete booking workflow. I implemented role-based access control and designed separate dashboard experiences for passengers, vendors, and administrators.",
 
+    futurePlans: [
+      "Add online payment integration",
+      "Add real - time seat availability",
+      "Add ticket cancellation and refund system",
+      "Add email and SMS notifications",
+      "Improve analytics for vendors and admins",
+    ],
+
     link: "https://online-ticket-booking-platform-six.vercel.app",
     github: "https://github.com/simantopal/ticketbari-server",
   },
@@ -115,6 +131,14 @@ const projectDetails = {
 
     challenges:
       "The main challenge was creating a smooth tutor discovery and booking experience. I designed a structured workflow where users can explore tutors, check their details, and book available sessions while keeping the application responsive and easy to use.",
+
+    futurePlans: [
+      "Add real-time tutor availability",
+      "Add online video consultation",
+      "Add payment integration",
+      "Add tutor reviews and ratings",
+      "Add automated booking notifications",
+    ],
 
     link: "https://medi-queue-client-side.vercel.app",
     github: "https://github.com/simantopal/MediQueue-server-side",
@@ -261,6 +285,27 @@ export default function ProjectDetails({
           <p className="text-text-secondary text-lg leading-8">
             {project.challenges}
           </p>
+        </section>
+
+        <section className="mt-24 max-w-4xl">
+          <h2 className="text-3xl font-bold mb-6">
+            Potential Improvements & Future Plans
+          </h2>
+
+          <div className="space-y-4">
+            {project.futurePlans.map((plan) => (
+              <div
+                key={plan}
+                className="flex items-center gap-3 text-text-secondary"
+              >
+                <span className="material-symbols-outlined text-accent">
+                  arrow_forward
+                </span>
+
+                {plan}
+              </div>
+            ))}
+          </div>
         </section>
 
       </div>

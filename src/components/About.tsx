@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const stats = [
-  { label: "Years Experience", value: 3, suffix: "+" },
   { label: "Projects Done", value: 15, suffix: "+" },
   { label: "Technologies", value: 10, suffix: "+" },
 ];
@@ -29,10 +28,13 @@ export default function About() {
             transition={{ delay: 0.2 }}
             className="text-body-lg text-text-secondary leading-relaxed"
           >
-            I am a results-driven Web Developer with a passion for creating seamless user experiences. With over 3 years of experience in the tech industry, I have developed a strong foundation in full-stack development. I focus on writing clean, maintainable code and optimizing application performance.
+            I am a passionate Web Developer who enjoys building modern, responsive, and user-friendly web applications. My programming journey began with HTML, CSS, and JavaScript, and I gradually expanded my skills in React, Next.js, TypeScript, Node.js, Express.js, and MongoDB.
+
+            I enjoy turning ideas into real-world digital experiences through clean code and thoughtful design. I am always eager to learn new technologies and grow as a developer.
+
           </motion.p>
 
-          <div className="grid grid-cols-3 gap-4 pt-4">
+          <div className="grid grid-cols-2 gap-4 pt-4">
             {stats.map((stat, i) => (
               <CounterCard key={stat.label} stat={stat} delay={i * 0.1} />
             ))}
