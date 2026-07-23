@@ -50,7 +50,7 @@ const projectDetails = {
     ],
 
     link: "https://orvanta-ai.vercel.app",
-    github: "https://github.com/simantopal/Orvanta-Ai-Server",
+    github: "https://github.com/simantopal/Orvanta-Ai",
   },
 
   "online-ticket-booking": {
@@ -97,7 +97,7 @@ const projectDetails = {
     ],
 
     link: "https://online-ticket-booking-platform-six.vercel.app",
-    github: "https://github.com/simantopal/ticketbari-server",
+    github: "https://github.com/simantopal/online-ticket-booking-platform",
   },
 
   "mediQueue": {
@@ -141,7 +141,7 @@ const projectDetails = {
     ],
 
     link: "https://medi-queue-client-side.vercel.app",
-    github: "https://github.com/simantopal/MediQueue-server-side",
+    github: "https://github.com/simantopal/MediQueue-client-side",
   },
 };
 
